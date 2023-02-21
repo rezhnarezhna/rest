@@ -1,0 +1,10 @@
+utilities\ResultSetConverter.class
+rest\Element.class
+elements\Max1byteElement.class
+elements\Max16MBElement.class
+rest\ElementDAO.class
+elements\Max64KBElement.class
+elements\Max255bytesElement.class
+utilities\DatabaseConnection.class
+rest\ElementResource.class
+elements\Max4GBElement.class
