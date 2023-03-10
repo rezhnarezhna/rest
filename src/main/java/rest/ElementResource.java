@@ -25,7 +25,7 @@ public class ElementResource {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Dictionary<String, String> getElementByIdAndSize(@QueryParam("id") int id, @QueryParam("size") String size) {
+    public String getElementByIdAndSize(@QueryParam("id") int id, @QueryParam("size") String size) {
         try {
             elementDAO = new ElementDAO();
         } catch (SQLException e) {
@@ -34,9 +34,8 @@ public class ElementResource {
         Element element = elementDAO.getElement(id, size);
 
         String encodedData = Base64.getEncoder().encodeToString(element.getData());
-        Dictionary<String, String> dict;
-        dict = new Hashtable<String, String>();
-        dict.put("data", encodedData);
-        return dict;
+        
+        return "{\"data\":"+encodedData+"}";
+       
     }
 }
