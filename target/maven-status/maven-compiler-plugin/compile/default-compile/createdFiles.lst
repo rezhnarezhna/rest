@@ -1,5 +1,4 @@
 utilities\ResultSetConverter.class
-utilities\FileDeleter.class
 elements\Max1byteElement.class
 soap\Element.class
 elements\Max16MBElement.class
@@ -9,4 +8,3 @@ soap\ElementResource.class
 elements\Max255bytesElement.class
 utilities\DatabaseConnection.class
 elements\Max4GBElement.class
-soap\Main.class
